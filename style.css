@@ -1,0 +1,115 @@
+@font-face {
+	font-family: 'Museo Sans Cyrl 300';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Museo Sans Cyrl 300'), url('fonts/MuseoSansCyrl_0.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Museo Sans Cyrl 700';
+  src: url(fonts/MuseoSansCyrl-700.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+	font-family: 'Museo Sans Cyrl 900';
+	font-style: normal;
+	font-weight: normal;
+	src: url('fonts/MuseoSansCyrl_3.woff') format('woff');
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	background-color: #f9f9f9;
+}
+
+.container {
+  width: 1176px;
+  max-width: 94%;
+  margin: 0 auto;
+}
+
+.container-shifted {
+  padding-left: 130px;
+}
+
+.title {
+	text-transform: uppercase;
+	padding-top: 45px;
+  padding-bottom: 55px;
+  color: #52545e;
+  font-size: 25px;  
+  line-height: 1.8em;
+  font-family: 'Museo Sans Cyrl 700', sans-serif;
+}
+
+.cursor-powers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.cursor-power {
+  width: 350px;
+  background: #fff;
+  color: #ca5c24;
+  margin: 0 5px 28px;
+  padding: 13px 15px 55px 40px;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 1px 20px 0 rgba(0,0,0,.06);
+  box-shadow: 0 1px 20px 0 rgba(0,0,0,.06);
+  cursor: pointer;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transition: cubic-bezier(.165,.84,.44,1) 300ms;
+  transition: cubic-bezier(.165,.84,.44,1) 300ms;
+}
+
+.cursor-power:hover {
+  -webkit-transform: translate(0,-12px);
+  transform: translate(0,-12px);
+  -webkit-box-shadow: 0 4px 30px 0 rgba(0,0,0,.1);
+  box-shadow: 0 4px 30px 0 rgba(0,0,0,.1);
+}
+
+.cursor-power_num {
+  font-size: 14px;
+  text-align: right;
+  margin-bottom: 20px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: 'Museo Sans Cyrl 900';
+}
+
+.cursor-power_title {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 25px;
+  font-family: 'Museo Sans Cyrl 900';
+}
+
+.cursor-power_desc {
+  color: #514e4e;
+  font-size: 17px;
+  line-height: 1.6em;
+  font-family: 'Museo Sans Cyrl 300';
+}
+
